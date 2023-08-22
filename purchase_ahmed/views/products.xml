@@ -1,0 +1,56 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="product_form">
+      <field name="name">products form</field>
+      <field name="model">product_product_product</field>
+      <field name="arch" type="xml">
+             <form>
+                <sheet>
+                 <group>
+                      <field name="name"/>
+                      <field name="product_id"/>
+                     <field name="cost_price"/>
+                 </group>
+                </sheet>
+             </form>
+       </field>
+
+    </record>
+
+
+    <record model="ir.ui.view" id="product_list">
+      <field name="name">products list</field>
+      <field name="model">product_product_product</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+            <field name="product_id"/>
+            <field name="cost_price"/>
+
+        </tree>
+      </field>
+    </record>
+
+
+
+
+
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="product_action_window">
+      <field name="name">product</field>
+      <field name="res_model">product_product_product</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- menu categories -->
+
+     <menuitem name="products" id="product_menu_1" parent="purchase_ahmed_menu_root" sequence="3"/>
+      <menuitem name="record product" id="product_menu_2" parent="product_menu_1"  sequence="3" action="product_action_window"/>
+
+  </data>
+</odoo>
