@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_purchase_ahmed_purhase_ahmed,purchase_ahmed.purchase_ahmed,model_purchase_ahmed_purchase_ahmed,base.group_user,1,1,1,1
-access_order_rrr,order.rrr,model_order_rrr,base.group_user,1,1,1,1
-access_product_product_product,product_product_product,model_product_product_product,base.group_user,1,1,1,0
-access_purchase_request_wizardt,purchase.request.wizard,model_purchase_request_wizard,base.group_user,1,1,1,1
